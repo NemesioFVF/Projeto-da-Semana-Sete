@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/tm.jpg">
+    <title>Consultar por Local</title>
+</head>
+
+<body>
+ <header class="Hpg2">
+    <nav>
+        <div>
+            <a href="index.html"> <img src="img/tm.jpg" id="logo"> </a>
+        </div>
+
+        <div>
+            <a href="index.html">Página Inicial</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="meuF.html">Consulta por IP</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="porIP.html" class="PIP"><u>Consulta por Local</u></a>
+        </div>
+    </nav>
+
+    <section >
+        <select id="continente" onchange="Ccontinente(this)">
+            <option selected hidden>Selecione Continente</option>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Antarctica">Antártida</option>
+            <option value="Asia">Ásia</option>
+            <option value="Atlantic">Oceano Atlântico</option>
+            <option value="Australia">Austrália</option>
+            <option value="Europe">Europa</option>
+            <option value="Indian">Oceano Índico</option>
+            <option value="Pacific">Oceano Pacífico</option>
+        </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="regiao" onchange="uct(this)">
+            <option hidden>Aguardando...</option>
+        </select>
+    </section>
+    <br> <br> <br>
+    <ul class="mUL">
+        <li><div id="locaz"> <p id="pg3"> Selecione um Continente e sua Região....</p> </div></li>
+    </ul>
+   
+<footer>
+
+Este Site não Utiliza Cookies
+<a href="https://fusohorariomundial.com.br/tabela" target="_blank">Sobre</a>
+</footer>
+</header>
+
+
+<script src="porIP.js"></script>
+</body>
+
+</html>

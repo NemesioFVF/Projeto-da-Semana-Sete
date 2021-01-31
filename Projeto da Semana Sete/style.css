@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+ul{
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 300px;
+    height: 300px;
+    margin: 30px 0px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    margin-left: 0.9%;
+    cursor: pointer;
+}
+
+ul li::before, ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    filter: blur(25px);
+    background: #000;
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+ul li::after {
+    filter: blur(40px);
+}
+
+ul li:hover:before, ul li:hover:after {
+opacity: 1;
+}
+
+ul li div {
+ position: absolute;
+ height: 300px;
+ top: 10px;
+ left: 10px;
+ right: 10px;
+ bottom: 10px;
+ text-align: center;
+ line-height: 80px;
+ color: #fff;
+ background: linear-gradient(45deg, #fc9700, #0267ff);
+ font-size: 40px;
+ border-radius: 10%;
+ opacity: 0.5;
+}
+
+p, td {
+    margin-top: 35%;
+    justify-content: center;
+    letter-spacing: -1px;
+    font-family: 'Amatic SC', cursive;
+}
+
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+}
+
+ul li div p, td {
+    opacity: 0.5;
+    text-shadow: 0 2px 5px rgba(0,0,0.2);
+    transform: rotateY(0deg) scale(0.8);
+    transition: 0.5s;
+    
+}
+
+ul li div:hover td {
+    transform: scale(1);
+    opacity: 1;
+}
+
+ul li::before,
+ul li::after {
+    background: linear-gradient(45deg, #fc9700, #0267ff);
+}
+
+.dia {
+    background-image: url('img/dia.jpg');
+    background-size: cover; 
+    color: #000000;
+}
+
+.tarde {
+    background-image: url('img/tarde.jpg');
+    background-size: cover; 
+    color: #ffffff;
+}
+
+.noite {
+    background-image: url('img/noite.jpg');
+    color: white;
+}
+
+::-webkit-scrollbar{width: 7px;}
+::-webkit-scrollbar-track {background: linear-gradient(45deg, #fc970071, #0267ff85)}
+::-webkit-scrollbar-thumb{background:linear-gradient(45deg, #fc9700, #0267ff)}
+::-webkit-scrollbar-thumb:hover{background: linear-gradient(135deg, #13072e41, #f3db0627)}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-top:auto;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background: linear-gradient(4deg, #0267ffb7, #fc9700b6);
+    font-family: 'Lobster', cursive;
+}
+
+nav a{
+    color: rgb(245, 231, 107);
+    font-size: 1.7em;
+    transition: 0.5s linear;
+    
+}
+
+.PIP {
+    color: rgb(129, 188, 243);
+}
+
+footer a{
+    color: rgb(177, 174, 174);
+    margin-left: 15%;
+    transition: 0.5s linear;
+}
+
+footer a:hover, nav a:hover{
+    color: rgb(129, 188, 243);
+    transition: width 0.5s linear;
+}
+
+#logo {
+    width: 7%;
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(4deg, #fc9700b6, #0267ffb7);
+    font-family: 'Lobster', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: 0.5s linear;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.Hpg2 {
+    width: 100%;
+}
+
+.mUL {
+    margin: 12.4%;
+   margin-left: 40%;
+}
+
+.tds {
+    line-height: 1.6;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10.2%;
+    margin-bottom: -15%;
+  
+}
+
+section select, option {
+    font-family: 'Lobster', cursive !important;
+    width:auto;
+    height:auto;
+    border-radius: 20px;
+    border-color: rgba(252, 185, 0, 0.774);
+    font-size:25px;
+    background: linear-gradient(4deg, #ffdba8, #99c1fd);
+}
+
+#locaz  {
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+#pg3 {
+    margin-top: 25%;
+}
